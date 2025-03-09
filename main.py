@@ -90,22 +90,29 @@ elif page == "Book List":
                     )
                     new_comment = st.text_area(
                         "Update Comment", 
-                        book.comment,
+                        'No comment' if pd.isna(book.comment) else book.comment,
                         key=f"comment_{book.book_id}"
                     )
+                    new_cover = st.text_input("Update Cover", book.cover_url, key=f"cover_{book.book_id}")
 
                     col1, col2 = st.columns(2)
                     
                     if col1.button("💾 Save Changes", key=f"save_{book.book_id}"):
-   
-                        book.status = new_status
-                        book.rating = new_rating
-                        book.comment = new_comment
-                        save_books(books)
+                        if all([new_title, new_status, new_author, new_comment, new_cover, new_genre, new_rating]):
+                            book.title = new_title
+                            book.author = new_author
+                            book.genre = new_genre
+                            book.status = new_status
+                            book.rating = new_rating
+                            book.comment = new_comment
+                            book.cover_url = new_cover
+                            save_books(books)
          
-                        st.session_state.editing = None
-                        st.success("Book updated successfully!")
-                        st.rerun()
+                            st.session_state.editing = None
+                            st.success("Book updated successfully!")
+                            st.rerun()
+                        else:
+                            st.error("Please fill in all required fields.")
                     
                     if col2.button("❌ Cancel", key=f"cancel_{book.book_id}"):
                         st.session_state.editing = None
