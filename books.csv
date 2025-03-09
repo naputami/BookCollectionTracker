@@ -1,0 +1,8 @@
+book_id,title,author,genre,status,rating,comment,cover_url
+1,The Hobbit,J.R.R. Tolkien,Fantasy,Read,5,A fantastic adventure!,https://m.media-amazon.com/images/I/81t2CVWEsUL._AC_UY327_FMwebp_QL65_.jpg
+2,To Kill a Mockingbird,Harper Lee,Classic,Read,5,Very emotional and deep,https://m.media-amazon.com/images/I/81gepf1eMqL._AC_UY327_FMwebp_QL65_.jpg
+3,Lonely Castle in The Mirror,Mizuki Tsujimura,Fantasy,Read,5,What a great coming-of-age story,https://th.bing.com/th/id/OIP.AU884v2ZE69JPIQtmYbz6gHaL0?rs=1&pid=ImgDetMain
+4,Confessions,Minato Kanae,Thriller & Suspense,Read,5,The plot twist blown me away. ,https://th.bing.com/th/id/OIP.lUUgH2wzpJUqBCoAkRe-DgAAAA?rs=1&pid=ImgDetMain
+5,The Dark Maidens,Akiyoshi Rikako,Thriller & Suspense,Reading,4,,https://cdn2.penguin.com.au/covers/original/9781945054891.jpg
+6,Convenience Store Women,Sayaka Murata,Other,Unread,3,,https://th.bing.com/th/id/R.592d8eaf65c36b8128fe82ba39a1dda2?rik=biAWchXo9PTtAA&riu=http%3a%2f%2fstatic1.squarespace.com%2fstatic%2f58349ff3f7e0ab6c8636f24c%2ft%2f5d1efaf00b6f4c0001263e4c%2f1562311423442%2f712yGixrQ3L.jpg%3fformat%3d1500w&ehk=jDwIzCTxBzgzbBNIuc7t7ddsBlj5qettRY6RMeuRvmY%3d&risl=&pid=ImgRaw&r=0
+7,The Selfish Gene,Richard Dawkins,Science & Technology,Reading,4,,https://th.bing.com/th/id/OIP.B0aUfg9ontOOp8Qr7dy8LAHaLT?rs=1&pid=ImgDetMain
