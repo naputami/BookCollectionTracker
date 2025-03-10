@@ -1,3 +1,4 @@
+import uuid
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -30,7 +31,7 @@ if page == "Add Book":
 
     if st.button("Add Book"):
         if all([title, author, genre, status]):
-            new_id = len(manager.books) + 1
+            new_id = uuid.uuid4()
             new_book = Book(new_id, title, author, genre, status, rating, comment, cover_url)
             manager.add_book(new_book)
             st.success("Book successfully added")

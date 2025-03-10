@@ -1,9 +1,10 @@
 book_id,title,author,genre,status,rating,comment,cover_url
-1,The Hobbit,J.R.R. Tolkien,Fantasy,Read,5,A fantastic adventure!,https://cdn.kobo.com/book-images/dceb020a-1dba-4e13-80d0-5de7c5c3b44c/1200/1200/False/the-hobbit-a-graphic-novel.jpg
-2,To Kill a Mockingbird,Harper Lee,Classic,Read,5,Very emotional and deep,https://m.media-amazon.com/images/I/81gepf1eMqL._AC_UY327_FMwebp_QL65_.jpg
-3,Lonely Castle in The Mirror,Mizuki Tsujimura,Fantasy,Read,5,What a great coming-of-age story,https://th.bing.com/th/id/OIP.AU884v2ZE69JPIQtmYbz6gHaL0?rs=1&pid=ImgDetMain
-4,Confessions,Minato Kanae,Thriller & Suspense,Read,5,The plot twist blown me away. ,https://th.bing.com/th/id/OIP.lUUgH2wzpJUqBCoAkRe-DgAAAA?rs=1&pid=ImgDetMain
-5,The Dark Maidens,Akiyoshi Rikako,Thriller & Suspense,Reading,4,,https://cdn2.penguin.com.au/covers/original/9781945054891.jpg
-6,Convenience Store Women,Sayaka Murata,Other,Unread,3,,https://th.bing.com/th/id/R.592d8eaf65c36b8128fe82ba39a1dda2?rik=biAWchXo9PTtAA&riu=http%3a%2f%2fstatic1.squarespace.com%2fstatic%2f58349ff3f7e0ab6c8636f24c%2ft%2f5d1efaf00b6f4c0001263e4c%2f1562311423442%2f712yGixrQ3L.jpg%3fformat%3d1500w&ehk=jDwIzCTxBzgzbBNIuc7t7ddsBlj5qettRY6RMeuRvmY%3d&risl=&pid=ImgRaw&r=0
-7,The Selfish Gene,Richard Dawkins,Science & Technology,Reading,4,,https://th.bing.com/th/id/OIP.B0aUfg9ontOOp8Qr7dy8LAHaLT?rs=1&pid=ImgDetMain
-8,Please Look After Mom,Kyung-sook Shin,Other,Reading,4,the story makes my eyes bawling,https://th.bing.com/th/id/OIP.fKdINVnD5JsQ732MfktBIwAAAA?rs=1&pid=ImgDetMain
+cceb5195-ea67-4d0c-a6d8-a8cce9f2a3ba,The Hobbit,J.R.R. Tolkien,Fantasy,Read,5,A fantastic adventure!,https://cdn.kobo.com/book-images/dceb020a-1dba-4e13-80d0-5de7c5c3b44c/1200/1200/False/the-hobbit-a-graphic-novel.jpg
+d0616255-f9db-4654-8546-f78b647c6433,To Kill a Mockingbird,Harper Lee,Classic,Read,5,Very emotional and deep,https://m.media-amazon.com/images/I/81gepf1eMqL._AC_UY327_FMwebp_QL65_.jpg
+e867172c-f93a-48d5-971f-3f43d7c6d9ff,Lonely Castle in The Mirror,Mizuki Tsujimura,Fantasy,Read,5,What a great coming-of-age story,https://th.bing.com/th/id/OIP.AU884v2ZE69JPIQtmYbz6gHaL0?rs=1&pid=ImgDetMain
+f80593b9-b020-4758-913c-3912f2a97854,Confessions,Minato Kanae,Thriller & Suspense,Read,5,The plot twist blown me away. ,https://th.bing.com/th/id/OIP.lUUgH2wzpJUqBCoAkRe-DgAAAA?rs=1&pid=ImgDetMain
+bbeed295-d82a-46cd-886a-8affd4443b8e,The Dark Maidens,Akiyoshi Rikako,Thriller & Suspense,Reading,4,,https://cdn2.penguin.com.au/covers/original/9781945054891.jpg
+c8d92f5e-5eb0-48e4-959b-125f49f52639,Convenience Store Women,Sayaka Murata,Other,Unread,3,,https://th.bing.com/th/id/R.592d8eaf65c36b8128fe82ba39a1dda2?rik=biAWchXo9PTtAA&riu=http%3a%2f%2fstatic1.squarespace.com%2fstatic%2f58349ff3f7e0ab6c8636f24c%2ft%2f5d1efaf00b6f4c0001263e4c%2f1562311423442%2f712yGixrQ3L.jpg%3fformat%3d1500w&ehk=jDwIzCTxBzgzbBNIuc7t7ddsBlj5qettRY6RMeuRvmY%3d&risl=&pid=ImgRaw&r=0
+75555673-11cc-49cd-b651-f9574dff71d4,The Selfish Gene,Richard Dawkins,Science & Technology,Reading,4,,https://th.bing.com/th/id/OIP.B0aUfg9ontOOp8Qr7dy8LAHaLT?rs=1&pid=ImgDetMain
+b287f3db-d0d4-4556-9b71-0fff66e17ccb,Please Look After Mom,Kyung-sook Shin,Other,Reading,4,the story makes my eyes bawling,https://th.bing.com/th/id/OIP.fKdINVnD5JsQ732MfktBIwAAAA?rs=1&pid=ImgDetMain
+a1ffaebb-d530-4664-ba9b-337716a506aa,Keajaiban Toko Kelontong Namiya,Keigo Higashino,Fantasy,Read,4,,https://cdn.gramedia.com/uploads/items/9786020648293_Keajaiban_Toko_Kelontong_Namiya_cov.jpg
