@@ -1,12 +1,11 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-from book import Book
-from utils import save_books, load_books
+from lib import Book, BookManager
 
 LIST_GENRE = ["Fantasy", "Romance", "Classic", "Mistery", "Scifi", "Self Help", "Religion & Spirituality", "Thriller & Suspense", "Parenting & Family", "Science & Technology", "Social Science", "Other"]
 
-books = load_books()
+manager = BookManager()
 
 if 'editing' not in st.session_state:
     st.session_state.editing = None
@@ -31,10 +30,9 @@ if page == "Add Book":
 
     if st.button("Add Book"):
         if all([title, author, genre, status]):
-            new_id = len(books) + 1
+            new_id = len(manager.books) + 1
             new_book = Book(new_id, title, author, genre, status, rating, comment, cover_url)
-            books.append(new_book)
-            save_books(books)
+            manager.add_book(new_book)
             st.success("Book successfully added")
         else:
             st.error("Please fill in all required fields.")
@@ -43,14 +41,13 @@ elif page == "Book List":
 
     st.subheader("📖 Your Book Collection")
 
-    if books:
-        for i, book in enumerate(books):
+    if manager.books:
+        for book in manager.books:
             col1, col2 = st.columns([1, 3])
 
-            # Display book cover
             col1.image(book.cover_url, width=100)
 
-            # Display book details
+
             col2.write(f"**{book.title}** by {book.author}")
             col2.write(f"📖 Genre: {book.genre} | ⭐ Rating: {book.rating} | 🏷️ Status: {book.status}")
             col2.write(f"💬 {'No comment' if pd.isna(book.comment) else book.comment}")
@@ -62,8 +59,7 @@ elif page == "Book List":
                 st.rerun()
             
             if cols[1].button("🗑️ Delete", key=f"delete_{book.book_id}"):
-                books.pop(i)
-                save_books(books)
+                manager.delete_book(book.book_id)
                 st.rerun()
                 
             if st.session_state.editing == book.book_id:
@@ -106,7 +102,7 @@ elif page == "Book List":
                             book.rating = new_rating
                             book.comment = new_comment
                             book.cover_url = new_cover
-                            save_books(books)
+                            manager.update_book(book)
          
                             st.session_state.editing = None
                             st.success("Book updated successfully!")
@@ -124,7 +120,7 @@ elif page == "Book List":
 
 elif page == "Statistics":
     st.subheader("📊 Statistics")
-    df = pd.DataFrame([book.to_dict() for book in books])
+    df = pd.DataFrame([book.to_dict() for book in manager.books])
 
     if not df.empty:
         st.write("#### Your books' genre")
